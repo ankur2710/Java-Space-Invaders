@@ -341,4 +341,12 @@ public class Board extends JPanel {
         }
     }
 
-   
+    private class TAdapter extends KeyAdapter {
+
+        @Override
+        public void keyReleased(KeyEvent e) {
+
+            player.keyReleased(e);
+        }
+
+      
